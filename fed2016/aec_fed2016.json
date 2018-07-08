@@ -1,0 +1,681 @@
+{
+    "count" : [
+        {
+            "path" : "act/data",
+            "name" : "ACT",
+            "shortname" : "act",
+            "description" : "Australian Capital Territory",
+            "vacancies" : 2,
+            "house" : "Australian Senate",
+            "state" : "ACT",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "act/data/aec-senate-formalpreferences-20499-ACT.csv.gz"
+            }
+        },
+        {
+            "path" : "nsw/data",
+            "name" : "NSW",
+            "shortname" : "nsw",
+            "description" : "New South Wales",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "NSW",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties": [[[29252, 29321], 29252]],
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "nsw/data/aec-senate-formalpreferences-20499-NSW.csv.gz"
+            }
+        },
+        {
+            "path" : "nsw/data",
+            "name" : "NSW excluding NAT #1",
+            "shortname" : "nsw_recount",
+            "description" : "New South Wales - recount excluding NAT #1 (NASH, Fiona)",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "NSW",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties": [[[29252, 29321], 29252]],
+            "remove": {
+                "method": "relaxed",
+                "candidates": [["NASH", "Fiona"]]
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "nsw/data/aec-senate-formalpreferences-20499-NSW.csv.gz"
+            }
+        },
+        {
+            "path" : "nsw/data",
+            "name" : "NSW excluding NAT #1 LIB #4",
+            "shortname" : "nsw_recount_hughes",
+            "description" : "New South Wales - recount excluding NAT #1 (NASH, Fiona) LIB #4 (HUGHES, Hollie)",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "NSW",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties": [[[28217, 28337, 29600], 28217], [[28337, 29600], 28337]],
+            "remove": {
+                "method": "relaxed",
+                "candidates": [["NASH", "Fiona"], ["HUGHES", "Hollie"]]
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "nsw/data/aec-senate-formalpreferences-20499-NSW.csv.gz"
+            }
+        },
+        {
+            "path" : "nsw/data",
+            "name" : "NSW s282 (1)",
+            "shortname" : "nsw_s282",
+            "description" : "NSW - s282 - limited original form",
+            "vacancies" : 6,
+            "house" : "Australian Senate",
+            "state" : "NSW",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "s282": {
+                "method": "restrict_form",
+                "recount_from": "nsw"
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "nsw/data/aec-senate-formalpreferences-20499-NSW.csv.gz"
+            }
+        },
+        {
+            "path" : "nsw/data",
+            "name" : "NSW s282 (2)",
+            "shortname" : "nsw_s282_savings",
+            "description" : "NSW - s282 recount - limited original form with ATL savings",
+            "vacancies" : 6,
+            "house" : "Australian Senate",
+            "state" : "NSW",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "s282": {
+                "method": "restrict_form_with_savings",
+                "recount_from": "nsw"
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "nsw/data/aec-senate-formalpreferences-20499-NSW.csv.gz"
+            }
+        },
+        {
+            "path" : "nt/data",
+            "verified" : "nt/verified",
+            "name" : "NT",
+            "shortname" : "nt",
+            "description" : "Northern Territory",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "vacancies" : 2,
+            "house" : "Australian Senate",
+            "state" : "NT",
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "nt/data/aec-senate-formalpreferences-20499-NT.csv.gz"
+            }
+        },
+        {
+            "name" : "QLD",
+            "shortname" : "qld",
+            "description" : "Queensland",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "QLD",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "qld/data/aec-senate-formalpreferences-20499-QLD.csv.gz"
+            }
+        },
+        {
+            "path" : "qld/data",
+            "name" : "QLD excluding GRN #1 PHON #2",
+            "shortname" : "qld_recount",
+            "description" : "Queensland - recount excluding GRN #1 (WATERS, Larissa) PHON #2 (ROBERTS, Malcolm)",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "QLD",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "remove": {
+                "method": "relaxed",
+                "candidates": [["WATERS", "Larissa"], ["ROBERTS", "Malcolm"]]
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "qld/data/aec-senate-formalpreferences-20499-QLD.csv.gz"
+            }
+        },
+        {
+            "path" : "qld/data",
+            "name" : "QLD excluding GRN #1 PHON #1 PHON #2 PHON #3",
+            "shortname" : "qld_recount_hansons",
+            "description" : "Queensland - recount excluding GRN #1 (WATERS, Larissa) PHON #1 (HANSON, Pauline) PHON #2 (ROBERTS, Malcolm) PHON #3 (SMITH, Judy)",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "QLD",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "remove": {
+                "method": "relaxed",
+                "candidates": [["WATERS", "Larissa"], ["ROBERTS", "Malcolm"], ["HANSON", "Pauline"], ["SMITH", "Judy"]]
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "qld/data/aec-senate-formalpreferences-20499-QLD.csv.gz"
+            }
+        },
+        {
+            "path" : "qld/data",
+            "name" : "QLD excluding GRN #1 GRN #2 PHON #2",
+            "shortname" : "qld_recount_grn12_phon2",
+            "description" : "Queensland - recount excluding GRN #1 (WATERS, Larissa) GRN #2 (BARTLETT, Andrew) PHON #2 (ROBERTS, Malcolm) PHON #4 (SMITH, Judy)",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "QLD",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "remove": {
+                "method": "relaxed",
+                "candidates": [["WATERS", "Larissa"], ["BARTLETT", "Andrew"], ["ROBERTS", "Malcolm"]]
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "qld/data/aec-senate-formalpreferences-20499-QLD.csv.gz"
+            }
+        },
+        {
+            "path" : "qld/data",
+            "name" : "QLD s282 (1)",
+            "shortname" : "qld_s282",
+            "description" : "Queensland - s282 recount - limited original form",
+            "vacancies" : 6,
+            "house" : "Australian Senate",
+            "state" : "QLD",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "s282": {
+                "method": "restrict_form",
+                "recount_from": "qld"
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "qld/data/aec-senate-formalpreferences-20499-QLD.csv.gz"
+            }
+        },
+        {
+            "path" : "qld/data",
+            "name" : "QLD s282 (2)",
+            "shortname" : "qld_s282_savings",
+            "description" : "Queensland - s282 recount - limited original form with ATL savings",
+            "vacancies" : 6,
+            "house" : "Australian Senate",
+            "state" : "QLD",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "s282": {
+                "method": "restrict_form_with_savings",
+                "recount_from": "qld"
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "qld/data/aec-senate-formalpreferences-20499-QLD.csv.gz"
+            }
+        },
+        {
+            "path" : "sa/data",
+            "name" : "SA",
+            "shortname" : "sa",
+            "description" : "South Australia",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "SA",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "sa/data/aec-senate-formalpreferences-20499-SA.csv.gz"
+            }
+        },
+        {
+            "path" : "sa/data",
+            "name" : "SA recount excluding FFP #1",
+            "shortname" : "sa_recount",
+            "description" : "South Australia - recount excluding FFP #1 (DAY, John)",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "SA",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "remove": {
+                "method": "relaxed",
+                "candidates": [["DAY", "Bob"]]
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "sa/data/aec-senate-formalpreferences-20499-SA.csv.gz"
+            }
+        },
+        {
+            "path" : "sa/data",
+            "name" : "SA recount excluding FFP #1 NXT #3",
+            "shortname" : "sa_recount_ffp_nxt3",
+            "description" : "South Australia - recount excluding FFP #1 (DAY, John) NXT #3 (KAKOSCHKE-MOORE, Skye)",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "SA",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "remove": {
+                "method": "relaxed",
+                "candidates": [["DAY", "Bob"], ["KAKOSCHKE-MOORE", "Skye"]]
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "sa/data/aec-senate-formalpreferences-20499-SA.csv.gz"
+            }
+        },
+        {
+            "path" : "sa/data",
+            "name" : "SA recount excluding FFP #1 NXT #3 NXT #4",
+            "shortname" : "sa_recount_ffp_nxt3_nxt4",
+            "description" : "South Australia - recount excluding FFP #1 (DAY, John) NXT #3 (KAKOSCHKE-MOORE, Skye) NXT #4 (STORER, Tim)",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "SA",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "remove": {
+                "method": "relaxed",
+                "candidates": [["DAY", "Bob"], ["KAKOSCHKE-MOORE", "Skye"], ["STORER", "Tim"]]
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "sa/data/aec-senate-formalpreferences-20499-SA.csv.gz"
+            }
+        },
+        {
+            "path" : "sa/data",
+            "name" : "SA s282 (1)",
+            "shortname" : "sa_s282",
+            "description" : "South Australia - s282 recount - limited original form",
+            "vacancies" : 6,
+            "house" : "Australian Senate",
+            "state" : "SA",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "s282": {
+                "method": "restrict_form",
+                "recount_from": "sa"
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "sa/data/aec-senate-formalpreferences-20499-SA.csv.gz"
+            }
+        },
+        {
+            "path" : "sa/data",
+            "name" : "SA s282 (2)",
+            "shortname" : "sa_s282_savings",
+            "description" : "South Australia - s282 recount - limited original form with ATL savings",
+            "vacancies" : 6,
+            "house" : "Australian Senate",
+            "state" : "SA",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "s282": {
+                "method": "restrict_form_with_savings",
+                "recount_from": "sa"
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "sa/data/aec-senate-formalpreferences-20499-SA.csv.gz"
+            }
+        },
+        {
+            "path" : "tas/data",
+            "verified" : "tas/verified",
+            "name" : "TAS",
+            "shortname" : "tas",
+            "description" : "Tasmania",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "TAS",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [[[28601, 28385, 28054], 28601]],
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "tas/data/aec-senate-formalpreferences-20499-TAS.csv.gz"
+            }
+        },
+        {
+            "path" : "tas/data",
+            "name" : "TAS s282 (1)",
+            "shortname" : "tas_s282",
+            "description" : "Tasmania - s282 recount - limited original form",
+            "vacancies" : 6,
+            "house" : "Australian Senate",
+            "state" : "TAS",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "s282": {
+                "method": "restrict_form",
+                "recount_from": "tas"
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "tas/data/aec-senate-formalpreferences-20499-TAS.csv.gz"
+            }
+        },
+        {
+            "path" : "tas/data",
+            "name" : "TAS s282 (2)",
+            "shortname" : "tas_s282_savings",
+            "description" : "Tasmania - s282 recount - limited original form with ATL savings",
+            "vacancies" : 6,
+            "house" : "Australian Senate",
+            "state" : "TAS",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "s282": {
+                "method": "restrict_form_with_savings",
+                "recount_from": "tas"
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "tas/data/aec-senate-formalpreferences-20499-TAS.csv.gz"
+            }
+        },
+        {
+            "path" : "tas/data",
+            "name" : "TAS excluding LIB #2",
+            "shortname" : "tas_recount_parry",
+            "description" : "Tasmania - recount excluding LIB #2 (Parry, Stephen)",
+            "description" : "Tasmania",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "TAS",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [[[28601, 28385, 28054], 28601]],
+            "remove": {
+                "method": "relaxed",
+                "candidates": [["PARRY", "Stephen"]]
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "tas/data/aec-senate-formalpreferences-20499-TAS.csv.gz"
+            }
+        },
+        {
+            "path" : "tas/data",
+            "name" : "TAS excluding LIB #2, JLN #1",
+            "shortname" : "tas_recount_parry_lambie",
+            "description" : "Tasmania - recount excluding LIB #2 (Parry, Stephen) JLN #1 (Lambie, Jacqui)",
+            "description" : "Tasmania",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "TAS",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "remove": {
+                "method": "relaxed",
+                "candidates": [["PARRY", "Stephen"], ["LAMBIE", "Jacqui"]]
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "tas/data/aec-senate-formalpreferences-20499-TAS.csv.gz"
+            }
+        },
+        {
+            "path" : "tas/data",
+            "name" : "TAS excluding LIB #2, JLN #1 #2",
+            "shortname" : "tas_recount_parry_lambie_martin",
+            "description" : "Tasmania - recount excluding LIB #2 (Parry, Stephen) JLN #1 (Lambie, Jacqui) JLN #2 (Martin, Steve)",
+            "description" : "Tasmania",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "TAS",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "remove": {
+                "method": "relaxed",
+                "candidates": [["PARRY", "Stephen"], ["LAMBIE", "Jacqui"], ["MARTIN", "Steve"]]
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "tas/data/aec-senate-formalpreferences-20499-TAS.csv.gz"
+            }
+        },
+        {
+            "path" : "vic/data",
+            "name" : "VIC",
+            "shortname" : "vic",
+            "description" : "Victoria",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "VIC",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "vic/data/aec-senate-formalpreferences-20499-VIC.csv.gz"
+            }
+        },
+        {
+            "path" : "vic/data",
+            "name" : "VIC s282 (1)",
+            "shortname" : "vic_s282",
+            "description" : "Victoria - s282 recount - limited original form",
+            "vacancies" : 6,
+            "house" : "Australian Senate",
+            "state" : "VIC",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "s282": {
+                "method": "restrict_form",
+                "recount_from": "vic"
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "vic/data/aec-senate-formalpreferences-20499-VIC.csv.gz"
+            }
+        },
+        {
+            "path" : "vic/data",
+            "name" : "VIC s282 (2)",
+            "shortname" : "vic_s282_savings",
+            "description" : "Victoria - s282 recount - limited original form with ATL savings",
+            "vacancies" : 6,
+            "house" : "Australian Senate",
+            "state" : "VIC",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "s282": {
+                "method": "restrict_form_with_savings",
+                "recount_from": "vic"
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "vic/data/aec-senate-formalpreferences-20499-VIC.csv.gz"
+            }
+        },
+        {
+            "path" : "wa/data",
+            "name" : "WA",
+            "shortname" : "wa",
+            "description" : "Western Australia",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "WA",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "wa/data/aec-senate-formalpreferences-20499-WA.csv.gz"
+            }
+        },
+        {
+            "path" : "wa/data",
+            "name" : "WA s282 (1)",
+            "shortname" : "wa_s282_1",
+            "description" : "Western Australia - s282 recount - limited original form",
+            "vacancies" : 6,
+            "house" : "Australian Senate",
+            "state" : "WA",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "s282": {
+                "method": "restrict_form",
+                "recount_from": "wa"
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "wa/data/aec-senate-formalpreferences-20499-WA.csv.gz"
+            }
+        },
+        {
+            "path" : "wa/data",
+            "name" : "WA s282 (2)",
+            "shortname" : "wa_s282_savings",
+            "description" : "Western Australia - s282 recount - limited original form with ATL savings",
+            "vacancies" : 6,
+            "house" : "Australian Senate",
+            "state" : "WA",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "s282": {
+                "method": "restrict_form_with_savings",
+                "recount_from": "wa"
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "wa/data/aec-senate-formalpreferences-20499-WA.csv.gz"
+            }
+        },
+        {
+            "path" : "wa/data",
+            "name" : "WA excluding PHON #1 GRN #1",
+            "shortname" : "wa_recount",
+            "description" : "Western Australia - recount excluding PHON #1 (CULLETON, Rodney), GRN #1 (LUDLAM, Scott)",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "WA",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "remove": {
+                "method": "relaxed",
+                "candidates": [["CULLETON", "Rodney Norman"], ["LUDLAM", "Scott"]]
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "wa/data/aec-senate-formalpreferences-20499-WA.csv.gz"
+            }
+        }
+    ],
+    "title" : "Australian Senate 2016"
+}
