@@ -1,0 +1,93 @@
+format = "AusSenatePost2015"
+
+[candidates]
+senate = "common/SenateCandidatesDownload-20499.csv"
+all = "common/2016federalelection-all-candidates-nat-30-06-924.csv"
+
+[dataset.act]
+preferences = "aec-senate-formalpreferences-20499-ACT.csv.gz"
+
+[dataset.nsw]
+preferences = "aec-senate-formalpreferences-20499-NSW.csv.gz"
+
+[dataset.nt]
+preferences = "aec-senate-formalpreferences-20499-NT.csv.gz"
+
+[dataset.qld]
+preferences = "aec-senate-formalpreferences-20499-QLD.csv.gz"
+
+[dataset.sa]
+preferences = "aec-senate-formalpreferences-20499-SA.csv.gz"
+
+[dataset.tas]
+preferences = "aec-senate-formalpreferences-20499-TAS.csv.gz"
+
+[dataset.vic]
+preferences = "aec-senate-formalpreferences-20499-VIC.csv.gz"
+
+[dataset.wa]
+preferences = "aec-senate-formalpreferences-20499-WA.csv.gz"
+
+[count.act]
+dataset = "act"
+description = "Australian Capital Territory"
+vacancies = 2
+election_order_ties = []
+election_ties = []
+exclusion_ties = []
+
+[count.nt]
+dataset = "nt"
+description = "Northern Territory"
+vacancies = 2
+election_order_ties = []
+election_ties = []
+exclusion_ties = []
+
+[count.nsw]
+dataset = "nsw"
+description = "New South Wales"
+vacancies = 12
+election_order_ties = []
+election_ties = []
+exclusion_ties = [{tie = ["DONNELLY, Cara Melissa", "THOMPSON, Andy"], pick = "DONNELLY, Cara Melissa"}]
+
+[count.qld]
+dataset = "qld"
+description = "Queensland"
+vacancies = 12
+election_order_ties = []
+election_ties = []
+exclusion_ties = []
+
+[count.sa]
+dataset = "sa"
+description = "South Australia"
+vacancies = 12
+election_order_ties = []
+election_ties = []
+exclusion_ties = []
+
+[count.tas]
+dataset = "tas"
+description = "Tasmania"
+vacancies = 12
+election_order_ties = []
+election_ties = []
+exclusion_ties = [{tie = ["BAKER, Daniel", "ALSTON, Ian", "LANE, George"], pick = "BAKER, Daniel"}]
+
+[count.vic]
+dataset = "vic"
+description = "Victoria"
+vacancies = 12
+election_order_ties = []
+election_ties = []
+exclusion_ties = []
+
+[count.wa]
+dataset = "wa"
+description = "Western Australia"
+vacancies = 12
+election_order_ties = []
+election_ties = []
+exclusion_ties = []
