@@ -1,6 +1,24 @@
 {
     "count" : [
         {
+            "path" : "act/data",
+            "name" : "ACT",
+            "shortname" : "act",
+            "description" : "Australian Capital Territory",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "vacancies" : 2,
+            "house" : "Australian Senate",
+            "state" : "ACT",
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-24310.csv",
+                "all-candidates": "common/2019federalelection-all-candidates-nat-17-05.csv",
+                "formal-preferences": "act/data/aec-senate-formalpreferences-24310-ACT.csv.gz"
+            }
+        },
+        {
             "path" : "nt/data",
             "name" : "NT",
             "shortname" : "nt",
