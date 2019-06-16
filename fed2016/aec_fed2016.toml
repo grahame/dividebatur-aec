@@ -1,4 +1,6 @@
 format = "AusSenatePost2015"
+description = "Australian Senate 2019"
+house = "Australian Senate"
 
 [candidates]
 senate = "common/SenateCandidatesDownload-20499.csv"
