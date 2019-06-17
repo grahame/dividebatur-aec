@@ -19,6 +19,24 @@
             }
         },
         {
+            "path" : "act/data",
+            "name" : "ACT 3 Senators",
+            "shortname" : "act_3senators",
+            "description" : "Australian Capital Territory (3 Senators, hypothetical)",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "vacancies" : 3,
+            "house" : "Australian Senate",
+            "state" : "ACT",
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-24310.csv",
+                "all-candidates": "common/2019federalelection-all-candidates-nat-17-05.csv",
+                "formal-preferences": "act/data/aec-senate-formalpreferences-24310-ACT.csv.gz"
+            }
+        },
+        {
             "path" : "nt/data",
             "name" : "NT",
             "shortname" : "nt",
@@ -27,6 +45,24 @@
             "election_ties": [],
             "exclusion_ties" : [],
             "vacancies" : 2,
+            "house" : "Australian Senate",
+            "state" : "NT",
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-24310.csv",
+                "all-candidates": "common/2019federalelection-all-candidates-nat-17-05.csv",
+                "formal-preferences": "nt/data/aec-senate-formalpreferences-24310-NT.csv.gz"
+            }
+        },
+        {
+            "path" : "nt/data",
+            "name" : "NT 3 Senators",
+            "shortname" : "nt_3senators",
+            "description" : "Northern Territory (3 Senators, hypothetical)",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "vacancies" : 3,
             "house" : "Australian Senate",
             "state" : "NT",
             "aec-data" : {
@@ -52,6 +88,100 @@
                 "senate-candidates": "common/SenateCandidatesDownload-24310.csv",
                 "all-candidates": "common/2019federalelection-all-candidates-nat-17-05.csv",
                 "formal-preferences": "tas/data/aec-senate-formalpreferences-24310-TAS.csv.gz"
+            }
+        },
+        {
+            "path" : "nsw/data",
+            "name" : "NSW",
+            "shortname" : "nsw",
+            "description" : "New South Wales",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "vacancies" : 6,
+            "house" : "Australian Senate",
+            "state" : "NSW",
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-24310.csv",
+                "all-candidates": "common/2019federalelection-all-candidates-nat-17-05.csv",
+                "formal-preferences": "nsw/data/aec-senate-formalpreferences-24310-NSW.csv.gz"
+            }
+        },
+        {
+            "path" : "qld/data",
+            "name" : "QLD",
+            "shortname" : "qld",
+            "description" : "Queensland",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "vacancies" : 6,
+            "house" : "Australian Senate",
+            "state" : "QLD",
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-24310.csv",
+                "all-candidates": "common/2019federalelection-all-candidates-nat-17-05.csv",
+                "formal-preferences": "nsw/data/aec-senate-formalpreferences-24310-QLD.csv.gz"
+            }
+        },
+        {
+            "path" : "sa/data",
+            "name" : "SA",
+            "shortname" : "sa",
+            "description" : "South Australia",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "vacancies" : 6,
+            "house" : "Australian Senate",
+            "state" : "SA",
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-24310.csv",
+                "all-candidates": "common/2019federalelection-all-candidates-nat-17-05.csv",
+                "formal-preferences": "nsw/data/aec-senate-formalpreferences-24310-SA.csv.gz"
+            }
+        },
+        {
+            "path" : "wa/data",
+            "name" : "WA",
+            "shortname" : "wa",
+            "description" : "Western Australia",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "vacancies" : 6,
+            "house" : "Australian Senate",
+            "state" : "WA",
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-24310.csv",
+                "all-candidates": "common/2019federalelection-all-candidates-nat-17-05.csv",
+                "formal-preferences": "nsw/data/aec-senate-formalpreferences-24310-WA.csv.gz"
+            }
+        },
+        {
+            "path" : "wa/data",
+            "name" : "WA excluding GAP #1",
+            "shortname" : "wa_culleton",
+            "description" : "Western Australia - recount excluding GAP #1 (CULLETON, Rodney)",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "WA",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "remove": {
+                "method": "relaxed",
+                "candidates": [["CULLETON", "Rodney Norman"]]
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "wa/data/aec-senate-formalpreferences-20499-WA.csv.gz"
             }
         }
     ],
