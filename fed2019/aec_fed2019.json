@@ -123,7 +123,7 @@
                 "format": "AusSenatePost2015",
                 "senate-candidates": "common/SenateCandidatesDownload-24310.csv",
                 "all-candidates": "common/2019federalelection-all-candidates-nat-17-05.csv",
-                "formal-preferences": "nsw/data/aec-senate-formalpreferences-24310-QLD.csv.gz"
+                "formal-preferences": "qld/data/aec-senate-formalpreferences-24310-QLD.csv.gz"
             }
         },
         {
@@ -141,7 +141,7 @@
                 "format": "AusSenatePost2015",
                 "senate-candidates": "common/SenateCandidatesDownload-24310.csv",
                 "all-candidates": "common/2019federalelection-all-candidates-nat-17-05.csv",
-                "formal-preferences": "nsw/data/aec-senate-formalpreferences-24310-SA.csv.gz"
+                "formal-preferences": "sa/data/aec-senate-formalpreferences-24310-SA.csv.gz"
             }
         },
         {
@@ -159,7 +159,7 @@
                 "format": "AusSenatePost2015",
                 "senate-candidates": "common/SenateCandidatesDownload-24310.csv",
                 "all-candidates": "common/2019federalelection-all-candidates-nat-17-05.csv",
-                "formal-preferences": "nsw/data/aec-senate-formalpreferences-24310-WA.csv.gz"
+                "formal-preferences": "wa/data/aec-senate-formalpreferences-24310-WA.csv.gz"
             }
         },
         {
@@ -167,7 +167,7 @@
             "name" : "WA excluding GAP #1",
             "shortname" : "wa_culleton",
             "description" : "Western Australia - recount excluding GAP #1 (CULLETON, Rodney)",
-            "vacancies" : 12,
+            "vacancies" : 6,
             "house" : "Australian Senate",
             "state" : "WA",
             "election_order_ties": [],
@@ -179,9 +179,9 @@
             },
             "aec-data" : {
                 "format": "AusSenatePost2015",
-                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
-                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
-                "formal-preferences": "wa/data/aec-senate-formalpreferences-20499-WA.csv.gz"
+                "senate-candidates": "common/SenateCandidatesDownload-24310.csv",
+                "all-candidates": "common/2019federalelection-all-candidates-nat-17-05.csv",
+                "formal-preferences": "wa/data/aec-senate-formalpreferences-24310-WA.csv.gz"
             }
         }
     ],
