@@ -183,6 +183,24 @@
                 "all-candidates": "common/2019federalelection-all-candidates-nat-17-05.csv",
                 "formal-preferences": "wa/data/aec-senate-formalpreferences-24310-WA.csv.gz"
             }
+        },
+        {
+            "path" : "vic/data",
+            "name" : "Victoria",
+            "shortname" : "vic",
+            "description" : "Victoria",
+            "vacancies" : 6,
+            "house" : "Australian Senate",
+            "state" : "VIC",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-24310.csv",
+                "all-candidates": "common/2019federalelection-all-candidates-nat-17-05.csv",
+                "formal-preferences": "vic/data/aec-senate-formalpreferences-24310-VIC.csv.gz"
+            }
         }
     ],
     "title" : "Australian Senate 2019"
